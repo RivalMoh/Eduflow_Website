@@ -56,6 +56,25 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## How to start it
+First of all, you must install the npm
+
+Open your terminal and give this code
+```bash
+npm install
+```
+And after that, add a new file named ".env", which contains something like this [env file](https://docs.google.com/document/d/1YVCUenEzYa_fSx4xJPa6i7n474JYzW2LeajLYOyX1FY/edit?usp=sharing)
+
+Next is you can type this command in your terminal
+```bash
+php artisan migrate:fresh --seed
+```
+
+Done, try to run it with this code
+```bash
+php artisan serve
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
