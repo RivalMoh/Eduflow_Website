@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+}
+
+/* Custom styles */
+body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+}
+
+/* Kanban Board Colors */
+.bg-sky-50 { background-color: #f0f9ff; }
+.text-sky-700 { color: #0369a1; }
+.bg-sky-200 { background-color: #bae6fd; }
+.text-sky-800 { color: #075985; }
+.border-sky-500 { border-color: #0ea5e9; }
+
+.bg-amber-50 { background-color: #fffbeb; }
+.text-amber-700 { color: #b45309; }
+.bg-amber-200 { background-color: #fde68a; }
+.text-amber-800 { color: #92400e; }
+.border-amber-500 { border-color: #f59e0b; }
+
+.bg-fuchsia-50 { background-color: #fdf4ff; }
+.text-fuchsia-700 { color: #a21caf; }
+.bg-fuchsia-200 { background-color: #f5d0fe; }
+.text-fuchsia-800 { color: #86198f; }
+.border-fuchsia-500 { border-color: #d946ef; }
+
+.bg-emerald-50 { background-color: #ecfdf5; }
+.text-emerald-700 { color: #047857; }
+.bg-emerald-200 { background-color: #a7f3d0; }
+.text-emerald-800 { color: #065f46; }
+.border-emerald-500 { border-color: #10b981; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+}
