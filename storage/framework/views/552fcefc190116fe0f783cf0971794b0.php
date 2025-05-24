@@ -381,7 +381,7 @@
                     </div>
                     <?php endif; ?>
                 </div>
-                <?php if($recentTasks->count() > 0): ?>
+                <?php if(count($recentTasks) > 0): ?>
                 <a href="<?php echo e(route('tasks.index')); ?>" class="block w-full mt-3 text-sm text-center text-indigo-600 hover:bg-indigo-50 py-1.5 rounded-md transition-colors duration-200">
                     View all tasks
                 </a>

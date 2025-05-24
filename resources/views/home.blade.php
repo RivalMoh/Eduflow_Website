@@ -375,7 +375,7 @@
                     </div>
                     @endforelse
                 </div>
-                @if($recentTasks->count() > 0)
+                @if(count($recentTasks) > 0)
                 <a href="{{ route('tasks.index') }}" class="block w-full mt-3 text-sm text-center text-indigo-600 hover:bg-indigo-50 py-1.5 rounded-md transition-colors duration-200">
                     View all tasks
                 </a>
